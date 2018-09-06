@@ -19,7 +19,7 @@ public class Mesada {
 			
 	@Override
 	public String toString() {
-		return "Mesada [largo=" + largo + ", ancho=" + ancho + "]";
+		return "Largo: " + this.largo + " Ancho: " + this.ancho;
 	}
 
 	public static int pilaMinima(Mesada[] mesadas) {
@@ -42,4 +42,17 @@ public class Mesada {
 		
 		return cantidadDePilas;
 	}
+	
+	public static Mesada mesadaMasGrande(Mesada[] mesas) {
+		Mesada mesaMasGrande = mesas[0];
+		
+		for(int i=1; i<mesas.length; i++) {
+			if(mesas[i].largo >= mesaMasGrande.largo &&  mesas[i].ancho > mesaMasGrande.ancho)
+				mesaMasGrande = mesas[i];
+		}
+		
+		return mesaMasGrande;	
+	}
+	
+	
 }

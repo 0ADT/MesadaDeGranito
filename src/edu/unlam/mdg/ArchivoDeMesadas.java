@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class ArchivoDeMesadas {
 	public static Mesada[] leer(String direccion) throws FileNotFoundException {
-		File entrada = new File(direccion);
-		Scanner sc = new Scanner(entrada);
+
+		Scanner sc = new Scanner(new File(direccion));
 		int cantidadMesadas = sc.nextInt();
 		Mesada[] mesadas = new Mesada[cantidadMesadas];
 		
