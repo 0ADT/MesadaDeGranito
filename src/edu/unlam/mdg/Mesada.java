@@ -1,6 +1,5 @@
 package edu.unlam.mdg;
 
-import java.util.concurrent.CancellationException;
 
 public class Mesada {
 	private int largo;
