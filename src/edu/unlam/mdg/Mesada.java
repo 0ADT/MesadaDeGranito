@@ -80,7 +80,7 @@ public class Mesada implements Comparable<Mesada>{
 						mesadasRestantes[j].ancho = -1;
 					}//fin if
 				}
-								
+
 				cantidadDePilas ++;
 			}//fin 	if(mesadasRestantes[i].largo != -1)	
 		}
